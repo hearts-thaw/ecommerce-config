@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+              filters:
+                - name: StripPrefix
+                  args:
+                    parts: 1
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,gateway,info
+  endpoint:
+    gateway:
+      access: read_only
+
+server:
+  port: 8080
