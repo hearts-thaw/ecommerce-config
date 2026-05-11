@@ -13,7 +13,7 @@ spring:
                     parts: 1
   docker:
     compose:
-      enabled: false
+      enabled: true
 management:
   endpoints:
     web:
