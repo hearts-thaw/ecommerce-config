@@ -6,3 +6,10 @@ management:
     web:
       exposure:
         include: health,info
+
+spring:
+  datasource:
+    url: jdbc:postgresql://pooler-ecommerce-rw:5432/app
+    hikari:
+      maximum-pool-size: 5
+      minimum-idle: 5
