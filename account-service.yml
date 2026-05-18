@@ -8,6 +8,11 @@ management:
         include: health,info
 
 spring:
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        default_schema: account
   datasource:
     url: jdbc:postgresql://pooler-ecommerce-rw:5432/app
     hikari:
