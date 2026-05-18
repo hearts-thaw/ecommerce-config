@@ -13,6 +13,8 @@ spring:
     properties:
       hibernate:
         default_schema: account
+  liquibase:
+    default-schema: account
   datasource:
     url: jdbc:postgresql://pooler-ecommerce-rw:5432/app
     hikari:
